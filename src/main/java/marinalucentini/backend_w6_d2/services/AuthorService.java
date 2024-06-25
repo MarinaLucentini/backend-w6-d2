@@ -54,7 +54,9 @@ return String.valueOf(body.getId());
         found.setLastName(updateAuthor.getLastName());
         found.setAvatar("https://unsplash.com/it/foto/una-vista-al-tramonto-della-grande-muraglia-cinese-Zm_tEAh3gG0");
         found.setEmail(updateAuthor.getEmail());
-        found.setDateOfBirth(updateAuthor.getDateOfBirth());
+
+        LocalDate dateOfBirth = LocalDate.now().minusYears(20);
+        found.setDateOfBirth(dateOfBirth);
 
 
 

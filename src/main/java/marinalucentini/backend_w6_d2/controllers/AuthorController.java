@@ -33,8 +33,8 @@ public class AuthorController {
     }
     // **** PUT
     @PutMapping("/{authorId}")
-    private Author updateAuthor(@PathVariable int authotId, @RequestBody Author body){
-        return authorService.findByIdAndUpdate(authotId, body);
+    private Author updateAuthor(@PathVariable int authorId, @RequestBody Author body){
+        return authorService.findByIdAndUpdate(authorId, body);
     }
     // *** DELETE
     @DeleteMapping("/{authorId}")
